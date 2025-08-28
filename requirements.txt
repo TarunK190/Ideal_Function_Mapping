@@ -1,0 +1,4 @@
+SQLAlchemy=1.4.41
+pandas=2.2.2
+numpy=1.26.4
+pytest=8.4.1
