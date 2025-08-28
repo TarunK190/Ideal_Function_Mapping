@@ -2,7 +2,7 @@
 
 import pandas as pd
 import os
-from .Exceptions import DataLoadingError
+from Data_Processor.Exceptions import DataLoadingError
 
 
 class DataLoader:

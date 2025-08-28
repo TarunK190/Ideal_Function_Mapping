@@ -1,7 +1,7 @@
 """Function selector class for choosing best ideal functions"""
 
 import numpy as np
-from .Exceptions import FunctionSelectionError
+from Data_Processor.Exceptions import FunctionSelectionError
 
 class FunctionSelector:
     def __init__(self, Train_Data, Ideal_Function_Data):

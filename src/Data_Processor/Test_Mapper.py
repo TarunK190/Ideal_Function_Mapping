@@ -4,7 +4,7 @@ import math
 from .Exceptions import TestMappingError
 
 class TestMapper:
-    __test__ = False 
+    __test__ =  False 
     def __init__(self, Test_Data, Ideal_Function_Data, selected_functions, max_deviations):
         self.Test_Data = Test_Data
         self.Ideal_Functions_Data = Ideal_Function_Data
@@ -13,7 +13,7 @@ class TestMapper:
         self.mapping_results = []
 
     """This will map test data to selected ideal functions"""
-    def map_test_data(self):  
+    def map_test_data(self):
      try:
         for i in range(len(self.Test_Data['x'])):
             x = self.Test_Data['x'][i]
@@ -28,7 +28,12 @@ class TestMapper:
                 max_deviation_allowed = self.max_deviations[train_func] * math.sqrt(2)
                 if deviation <= max_deviation_allowed and deviation < min_deviation:
                     min_deviation = deviation
-                    best_match = {'x': x,'y': y,'delta_y': deviation,'ideal_function_no': ideal_func.upper()}
+                    best_match = {
+                        'x': x,
+                        'y': y,
+                        'delta_y': deviation,
+                        'ideal_function_no': ideal_func.upper()
+                    }
             if best_match is not None:
                 self.mapping_results.append(best_match)
         return self.mapping_results
