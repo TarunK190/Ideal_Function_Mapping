@@ -10,30 +10,7 @@ The main goal is to identify the best-fitting ideal functions for the training d
 
 ## 📂 Project Structure
 
-```
-Python_Written_Assignment/
-│
-├── Dataset/                     # Raw datasets
-│   ├── ideal.csv
-│   ├── test.csv
-│   └── train.csv
-│
-├── src/                         # Source code
-│   ├── Database/                # Database layer
-│   │   ├── Manager.py
-│   │   └── Models.py
-│   │
-│   ├── Data_Processor/          # Data loading & processing
-│   │   └── (DataLoader, FunctionSelector, TestMapper, PlotGenerator, etc.)
-│   │
-│   └── Unittest/                # Unit testing
-│       └── test_all.py
-│
-├── Ideal_Function_Mapping.db     # SQLite database file (results stored here)
-├── visualization.html            # Visualization output (plots)
-├── main.py                       # Main entry point for running the project
-├── requirements.txt              # Dependencies
-└── README.md                     # Documentation
-```
+
+
 
 
